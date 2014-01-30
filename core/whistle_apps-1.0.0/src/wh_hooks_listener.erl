@@ -34,8 +34,9 @@
                                               ,'CHANNEL_ANSWER'
                                               ,'CHANNEL_DESTROY'
                                              ]}
+                             ,'federate'
                             ]}
-                   ,{'route', []}
+                   ,{'route', ['federate']}
                   ]).
 -define(RESPONDERS, [{{?MODULE, 'handle_call_event'}
                        ,[{<<"call_event">>, <<"*">>}
